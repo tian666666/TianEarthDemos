@@ -1,0 +1,185 @@
+.vts-presenter.subtitlesContainer {
+    display: none;
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    width: 76%;
+    height: 76%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.9);
+    overflow: hidden;
+    font-family: helvetica, arial, sans-serif;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.vts-presenter.subtitlesContainer.full {
+    left: 10%;
+    bottom: 5%;
+    width: 76%;
+    height: 76%;
+    padding: 2%;
+}
+
+.vts-presenter.subtitlesContainer.title {
+    bottom : 10%;
+    width: 76%;
+    height: 50%;
+    padding: 2%;
+}
+
+.vts-presenter.subtitlesContainer.mini {
+    left: 50%;
+    bottom: 5%;
+    width: 260px;
+    margin-left: -100px;
+    height: 15px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.vts-presenter.subtitlesContainer button {
+    min-width: 200px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.5);
+    font-size: 2vmax;
+    padding: 10px 20px;
+    border-radius: 3px;
+    z-index: 2;
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.vts-presenter.subtitlesContainer button:nth-of-type(1) {
+    left: 5%;
+}
+
+.vts-presenter.subtitlesContainer button.hidden {
+    bottom: -70px;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.vts-presenter.subtitlesContainer .swipeSubtitles {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 100%;
+    margin-left: -50px;
+    width: 35px;
+    height: 60px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.vts-presenter.subtitlesContainer .swipeSubtitles div {
+    position: absolute;
+    width: 35px;
+    height: 59px;
+    overflow: hidden;
+}
+
+.vts-presenter.subtitlesContainer .swipeSubtitles div div {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    position: absolute;
+    left: -40px;
+    top: 0px;
+}
+
+.vts-presenter.subtitlesContainer .swipeSubtitles:nth-of-type(1) {
+    left: 20px;
+    margin-left: 0;
+}
+
+.vts-presenter.subtitlesContainer .swipeSubtitles:nth-of-type(1) div div {
+    left: 15px;
+}
+
+.vts-presenter.subtitlesContainer .swipeSubtitles:hover {
+    margin-left: -45px;
+} 
+
+.vts-presenter.subtitlesContainer .swipeSubtitles:nth-of-type(1):hover {
+    left : 15px;
+    margin-left: 0;
+} 
+
+.vts-presenter.subtitlesContainer .swipeSubtitles.hidden {
+    opacity: 0;
+    cursor: default;
+}
+
+.vts-presenter.subtitlesContainer .innerContainer {
+    padding: 0 40px;
+}
+
+.vts-presenter.subtitlesContainer article {
+    position: relative;
+    top: 0;
+}
+
+.vts-presenter.subtitlesContainer section {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.vts-presenter.subtitlesContainer .innerContainer h3 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 40px;
+}
+
+.vts-presenter.subtitlesContainer .innerContainer h4 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.vts-presenter.subtitlesContainer .innerContainer p {
+    font-size: 27px;
+}
+
+.vts-presenter.subtitlesContainer.mini .innerContainer section p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.vts-presenter.subtitlesContainer img {
+    margin: 10px 0;
+    border-radius: 3px;
+    width: 550px;
+    position: relative;
+    left: 50%;
+    margin-left: -275px;
+}
+
+.vts-presenter.subtitlesContainer section a, .vts-presenter.subtitlesContainer section p a {
+    color: #002266;
+    border-bottom: dotted 2px #003399;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vts-presenter.subtitlesContainer section a:hover, .vts-presenter.subtitlesContainer section p a:hover {
+    cursor: pointer;
+}
+

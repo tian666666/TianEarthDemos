@@ -1,0 +1,11 @@
+dist
+debug
+build/*
+node_modules
+build/*
+build/*.js
+build/*.css
+.project
+*.un~
+*.sw*
+*.lock
